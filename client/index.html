@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width,
+  initial-scale=1.0">
+  <link rel="stylesheet" href="sytlesheet.css">
+  <title>Monero Mining Gang Database</title>
+</head>
+<body>
+  <main>
+     
+      <div>
+        <input placeholder="TYPE YOUR NAME HERE" id="search-input">
+        <button id="search-btn">Search</button>
+      </div>
+
+      <table id="table">
+
+        <thead>
+          <th>id</th>
+          <th>user</th>
+          <th>algo</th>
+          <th>gpu</th>
+          <th>temp</th>
+          <th>fan</th>
+          <th>speed</th>
+          <th>share</th>
+          <th>core</th>
+          <th>mem</th>
+          <th>power</th>
+          <th>eff</th>
+          <th>logtime</th>
+          <th>uptime</th>
+          <th>energy</th>
+          <th>gpunr</th>
+
+        </thead>
+        <tbody></tbody>
+
+      </table>
+      <div class="container">
+        <h1>Chart.js with MySQL Database</h1>
+        <canvas id="chart" style="width: 80%; height: 60vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+        <script>
+        
+          var ctx = document.getElementById("chart").getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              label: [1,2,3,4,5,6,7,8,9],
+              datasets:
+              [{
+                  label: 'Data1',
+                  data: [1],
+                  backgroundColor: 'transparent',
+                  borderColor: 'rgba(255,99,132)',
+                  borderWidth: 3
+              },
+
+              {
+                label: 'Data 2',
+                data: [2],
+                backgroundColor: 'transparent',
+                borderColor: 'rgba(0,255,255)',
+                borderWidth: 3
+              }]
+            },
+            options: {
+		            scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
+		            tooltips:{mode: 'index'},
+		            legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
+		        }
+		    });
+        </script>
+      </div> 
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
