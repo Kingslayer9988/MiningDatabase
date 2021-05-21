@@ -1,0 +1,10 @@
+{
+"logfilename": "PATH/TO/GMINER/LOGFILE/", 
+"username": "USERNAME IN DATABASE",
+"gputype": ["1070", "2060", "1080"],
+"pattern": ["Uptime:", "Algorithm:", "32m\\s*[1][0][7][0] ", "32m\\s*[2][0][6][0] ", "32m\\s*[1][0][8][0] "],
+"clearlog": true,
+"insertDB": true,
+"plot_graph": false,
+"algofile": "PATH/TO/algo.log"
+}

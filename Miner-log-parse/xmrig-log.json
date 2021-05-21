@@ -1,0 +1,11 @@
+{
+"logfilename": "PATH/TO/XMRIG-LOGFILE", 
+"username": "DATABASE USERNAME",
+"cputype": ["AMD Ryzen 7 3700"],
+"pattern": ["miner(.+)speed", "net(.+)algo"],
+"clearlog": true,
+"insertDB": true,
+"plot_graph": false,
+"freebsd": false
+}
+
